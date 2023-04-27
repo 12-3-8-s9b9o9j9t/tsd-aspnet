@@ -36,7 +36,7 @@
                 <label asp-for="Ingredients" class="control-label"></label>
                 <br />
                 <small>Enter ingredients separated by commas (e.g. flour, sugar, eggs)</small>
-                <textarea asp-for="Ingredients" class="form-control"></textarea>
+                <input asp-for="Ingredients" class="form-control" />
                 <span asp-validation-for="Ingredients" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -47,8 +47,8 @@
             <div class="form-group">
                 <label asp-for="TipsTricks" class="control-label"></label>
                 <br />
-                <small>Enter tips and tricks separated by commas (e.g. preheat the oven before baking, use fresh ingredients)</small>
-                <textarea asp-for="TipsTricks" class="form-control"></textarea>
+                <small>Enter tips and tricks separated by semicolons (e.g. Preheat the oven before baking; Use fresh ingredients)</small>
+                <input asp-for="TipsTricks" class="form-control" />
                 <span asp-validation-for="TipsTricks" class="text-danger"></span>
              </div>
             <div class="form-group">

@@ -113,7 +113,8 @@ namespace Yummy_CookBook.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                // redirect to details
+                return RedirectToAction(nameof(Details), new { id = recipe.ID });
             }
             return View(recipe);
         }

@@ -4,11 +4,11 @@
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public int Time { get; set; }
+        public uint Time { get; set; }
         public string Difficulty { get; set; }
-        public int NbLikes { get; set; }
-        public ICollection<string> Ingredients { get; set; }
+        public uint NbLikes { get; set; }
+        public string Ingredients { get; set; }
         public string Process { get; set; }
-        public ICollection<string> TipsTricks { get; set; }
+        public string? TipsTricks { get; set; }
     }
 }
